@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT ENROLLMENT FORM</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="addRowFunction.js"></script>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    
+    <div class="container">
+       
+        <div class="row1" id="header"><p>Student Enrollment Form</p></div>
+        <div class="row2">
+            
+            
+            <div class="container-md">
+               
+            <div id="LeftCol" class="col-md-6" style="background-color: rgb(249, 250, 250); " >
+                
+                <form  id="enrollForm"  name="enrollmentform">
+                    <div class="container-md" >
+                        <div class="row">
+                            <div class="col-sm ">Name</div>
+                            <div class="col-sm">
+                                <input  style="font-family: 'Font Awesome 5 Free'; font-weight: 700;" placeholder=" &#xf007;" name="textname" type="text" id="name" class="form-control" >
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm" >Email</div>
+                            <div class="col-sm">
+                                <input size="50" style="font-family: 'Font Awesome 5 Free'; font-weight: 700;" placeholder=" &#xf0e0;" name="emailadd" type="email" id="emailid" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm">Website</div>
+                            <div class="col-sm">
+                                <input  style="font-family: 'Font Awesome 5 Free'; font-weight: 700;" placeholder=" &#xf0c1;" name="weblink" type="website" id="websiteLink" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm">Image Link</div>
+                            <div class="col-sm">
+                                <input  style="font-family: 'Font Awesome 5 Free'; font-weight: 700;" placeholder=" &#xf03e;" name="img" type="url" id="imgLink" class="form-control" >
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm">Gender</div>
+                            <div class="col-sm">
+                                <input id="gender" type="radio" name="gender" value="Male" class="form-control-sm" >Male
+                                
+                                <input id="gender" type="radio" name="gender" value="Female" class="form-control-sm">Female
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm">Skills</div>
+                            <div class="col-sm">
+                                <label class="checkbox-inline"><input id="skill"  type="checkbox" name="skill" value="Java" >Java </label>
+                                <label class="checkbox-inline"><input id="skill"  type="checkbox" name="skill" value="HTML" >HTML </label>
+                                <label class="checkbox-inline"><input id="skill" type="checkbox" name="skill" value="CSS">CSS</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm">
+                                
+                                <button  id="enrollbtn" onclick="addRow(); " type="button" class="btn btn-primary btn-md" >Enroll Student</button>
+                            </div>
+                            <div class="col-sm">
+                                <button id="resetbtn" type="reset" class="btn btn-danger btn-md">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div id="RightCol" class="col-md-6" style="background-color: rgb(246, 248, 248);">
+                <p id="head2">Enrolled Students</p> 
+               
+                <div class="table-responsive" style="width: 100%;">
+                    <table id="righttable" class="table table-bordered" cellpadding="0" cellspacing="0" >
+                        <thead>
+                            <tr class="tablehead">
+                                
+                                <th>Description</th>
+                                <th>Image</th>
+                            </tr>
+                        </thead>
+                        <tbody > 
+                        <!-- Leaving body blank,row will be added dynamically thru js --> 
+                        </tbody>                                   
+                    </table>
+                </div>    
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

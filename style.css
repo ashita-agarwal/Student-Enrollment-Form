@@ -1,0 +1,115 @@
+#header{
+    border:1px black solid ;
+    text-align: center;  
+    background-color:rgb(72, 197, 149) ;
+    height: 40px;
+    padding: 2px;
+    font-weight:bolder;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+}
+#footer{
+    text-align: center;
+    font-size: 10px;
+    background-color:rgb(72, 197, 149);
+    border-width: 1px;
+    color:white;
+    width:100%;
+    border: 1px black solid;
+}
+#LeftCol{
+    float:left;
+    height: 520px;
+    padding-top: 40px;
+    padding-left: 5%;
+    padding-right: 8%;
+    border-left: 1px black solid;
+    border-right: 3px rgb(72, 197, 149) solid ;
+}
+#RightCol{
+   float:right;
+   border-right: 1px black solid;
+   height: 520px;
+}
+#righttable{
+    margin-top: 4%;
+    width: 80%;
+    margin-left: 14%;
+}
+input[type=checkbox]{
+   width:10px;
+   height:10px;
+   margin-right: 3px;
+}
+input[type=radio]{
+    width:10px;
+    height:10px;
+}
+tr:nth-child(even) {
+     background-color: rgb(220, 235, 192);    
+}
+#righttable th{
+     background-color: rgb(179, 207, 125);
+     border: 2px #B5CDA3 solid;  
+}
+#righttable td{
+    text-align: left;
+    font-size: small;
+    padding-left: 7px;
+    border: 2px #B5CDA3 solid;
+}
+.row{
+    padding: 4px;  
+    text-align: left;
+}
+#pname{
+    font-weight: bold;
+}
+img{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6px;
+    background-size: contain;
+}
+.table-responsive  {
+    overflow-y: auto;
+    height: 400px;
+}
+#righttable{
+    border: 2px #90a381 solid;
+}
+.tablehead{
+    color: white;
+}
+.tablehead  th{
+    width: fit-content;
+    font-size: small;
+}
+#head2{
+    margin-top: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+}
+#tablerow{
+    animation: fadein ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadein{
+    0%{ opacity: 0;}
+    100% {opacity: 1;}
+}
+@media screen and (max-width: 769px) {
+    #LeftCol {
+        border-right:1px solid black ;
+        
+    }
+    #RightCol{
+        border-left: 1px black solid;
+    }
+}
