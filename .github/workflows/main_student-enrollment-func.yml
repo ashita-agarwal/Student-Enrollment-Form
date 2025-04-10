@@ -40,4 +40,4 @@ jobs:
           app-name: 'student-enrollment-func'
           slot-name: 'Production'
           package: '${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/output'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4BF6CF02E3E0426B8E27D67B53AAE202 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8FF35279C84A4174A8E9DDB1D2B89919 }}
